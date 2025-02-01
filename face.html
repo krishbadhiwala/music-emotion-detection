@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face Detection!</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+    #video {
+      position: absolute;
+      z-index: -1;
+            border: 1px solid black;
+            width: 640px;
+            height: 480px;
+        }
+        #controls {
+          display: inline;
+          color: rgba(255, 255, 255, 0.502);
+            margin-top: 80vh;
+            margin-bottom: 15px;
+            font-size: 78px;
+        }
+
+        .btn{
+          background-color: #df4b3f;
+          color: white;
+          padding: 10px;
+          border-radius: 30px;
+          cursor: pointer;
+          border-style: none;
+          font-size: 15px;
+        }
+
+        .btn:hover{
+            border : 2px solid #df4b3f;
+            background-color: black;
+        }
+        #btn1{
+          margin: 10px 10px 10px 10px;  
+        }
+        #countdown{
+          display: inline;
+          color: rgba(255, 255, 255, 0.502);
+           
+            font-size: 78px;
+        }
+
+
+    
+  </style>
+</head>
+<body>
+   <div id="controls">
+  
+</div>
+   <div id="countdown">
+  
+</div>
+  <video id="video" width="720" height="560" autoplay muted></video>
+</body>
+</html>
+
+
+
+
+
